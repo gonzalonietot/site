@@ -6,6 +6,7 @@
         flat
         src="https://picsum.photos/1920/1080?random"
     >
+      <v-app-bar-nav-icon @click="openMenu"></v-app-bar-nav-icon>
       <v-avatar size="40">
         <v-img src="../../public/static/gonzalo.jpg" />
       </v-avatar>
@@ -22,7 +23,27 @@
 
 <script>
 export default {
-  name: "Toolbar"
+  name: "Toolbar",
+  props: {
+    drawer: {
+      type:Boolean,
+      default: false
+    }
+  },
+  data() {
+    return {
+      value:this.drawer
+    }
+  },
+  mounted() {
+    console.log(this.drawer, 'we')
+  },
+  methods: {
+    openMenu() {
+      this.value = !this.value
+      this.$emit('update:drawer', this.value)
+    }
+  }
 }
 </script>
 

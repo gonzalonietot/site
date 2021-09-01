@@ -1,20 +1,15 @@
 <template>
   <v-app id="inspire">
-   <toolbar />
+    <v-navigation-drawer
+        v-model="drawer"
+        app
+    >
+      <!--  -->
+    </v-navigation-drawer>
+    <toolbar :drawer.sync="drawer"/>
 
-    <v-main class="grey lighten-3">
+    <v-main>
       <v-container>
-        <v-row>
-          <v-col
-          >
-            <v-sheet
-                min-height="90vh"
-                rounded="lg"
-            >
-              <!--  -->
-            </v-sheet>
-          </v-col>
-        </v-row>
       </v-container>
     </v-main>
   </v-app>
@@ -34,6 +29,7 @@ export default {
         'EXPERIENCIA',
         'CONTACTO',
       ],
+      drawer: true
     }
 
 
