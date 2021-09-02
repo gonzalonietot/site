@@ -4,6 +4,7 @@
     <toolbar :drawer.sync="drawer" @mode="theme"/>
     <v-main>
       <v-container>
+        <phone />
       </v-container>
     </v-main>
   </v-app>
@@ -11,9 +12,11 @@
 <script>
 import Toolbar from "./Toolbar";
 import NavigationDrawer from "./NavigationDrawer";
+import Phone from "./Phone";
 export default {
   name: 'Home',
   components: {
+    Phone,
     NavigationDrawer,
     Toolbar
   },
@@ -25,7 +28,6 @@ export default {
   },
   methods: {
     theme(mode) {
-      console.log(mode, 'mode acáaaaaaaaaaa')
       this.mode = mode;
     }
   }
