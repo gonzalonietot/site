@@ -10,9 +10,6 @@ const router = new VueRouter({
             name: Main, component: Main, path: '/'
         },
         {
-            name: Main, component: Main, path: '/home'
-        },
-        {
             name: Work, component: Work, path: '/work'
         },
         {
