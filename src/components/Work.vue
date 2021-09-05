@@ -1,5 +1,5 @@
 <template>
-  <v-row class=" mt-lg-12 pt-lg-12" align="end" justify="center">
+  <v-row class="mt-16 mt-lg-12 pt-lg-12" align="end" justify="center">
     <v-col sm="8" md="8">
       <v-toolbar data-app dark prominent height="60" color="#1A237E">
         <v-toolbar-title>Experiencia</v-toolbar-title>
@@ -9,7 +9,7 @@
           <v-window-item v-for="n in img" :key="n.id">
             <v-card height="200">
               <v-row class="fill-height" align="center" justify="center" tag="v-card-text">
-                <v-col cols="7" md="3">
+                <v-col cols="5" md="3">
                   <v-img :src="n.src" />
                 </v-col>
               </v-row>
