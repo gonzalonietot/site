@@ -13,10 +13,6 @@ Tech stack:
 * Vue
 * Vuetify
 
-Screen: 
-
-![Imagen de portafolio](https://raw.githubusercontent.com/gnieto11/portfolio/master/public/static/portfolio.PNG)
-
 Clone Project:
 ```
 git clone https://github.com/gnieto11/portfolio.git
