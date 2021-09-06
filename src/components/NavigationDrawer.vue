@@ -1,7 +1,7 @@
 <template>
   <v-navigation-drawer v-model="drawer" app>
-    <v-sheet color="avatar grey lighten-4" class="pa-4">
-      <v-avatar color="grey darken-1" size="60">
+    <v-sheet color="avatar white lighten-4" class="pa-4">
+      <v-avatar color="white darken-1" size="60">
         <img src="../../public/static/photo.jpg"/>
       </v-avatar>
     </v-sheet>
